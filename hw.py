@@ -26,7 +26,6 @@ hello = hello.replace("l", "r")
 print(hello)  # "herro worrd
 
 #Question 7
-from os import name
 king= input("What is your name? ")
 king= king .upper()
 print(king)
