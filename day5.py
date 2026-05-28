@@ -12,7 +12,7 @@ for key, value in a.items():
     print(key, ":", value)
 
 students= {"Aryan" : {"age": 12, "score": 92, "city": "pune"},
-           "Aditya" : {"age": 13, "score": 88, "city": "mumbai"},
+           "Aditya" : {"age": 13, "score": 32.5, "city": "mumbai"},
            "Pratyush" : {"age": 12, "score": 95, "city": "delhi"}}
 print (students["Aditya"]["score"])
 print (students["Pratyush"]["city"])

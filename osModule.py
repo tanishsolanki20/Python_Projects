@@ -12,10 +12,10 @@ print(floor(pi))
 try:
     num= int(input("Enter a number: "))
     print(10/num)
-#except ValueError:
- #   print("Error: Please enter a valid number")
-#except ZeroDivisionError:
- #   print("Error: Cannot divide by zero")"""
+except ValueError:
+    print("Error: Please enter a valid number")
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero")
 except (ValueError, ZeroDivisionError) as e:
     print(f"Error: Please enter a valid number. {e}")
 a= 10

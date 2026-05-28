@@ -1,6 +1,6 @@
 #while loop
 #case 1
-count= 0
+"""count= 0
 while count < 3:
     print("Count:", count)
     count += 1
@@ -15,12 +15,12 @@ while count < 3:
 my_list = [1, 2, 3, 4, 5]
 print(my_list[1:3])  # Output: [2, 3]"""
 
-for i in my_list:
+"""for i in my_list:
     print(i)
 
 friends_list= ["aditya","sumedh","pratyush"]
 for friend in friends_list:
-    print("Hello", friend)
+    print("Hello", friend)"""
 
 """print(len(friends_list))
 friends_list.append("satyarth")
