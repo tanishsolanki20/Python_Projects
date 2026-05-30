@@ -39,4 +39,8 @@ if x==x[::-1]:
     print("True")
 else:
     print("False")"""
+count= 5
+while count >2:
+    print(count)
+    count-=2
 

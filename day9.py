@@ -1,5 +1,5 @@
 #function chaining
-def celsius_to_fahrenheit(celsius):
+"""def celsius_to_fahrenheit(celsius):
     return round ((celsius * 9/5) + 32, 1)
 
 def is_fever(temp_c):
@@ -23,3 +23,7 @@ def analyse_all(temps):
         print(describe_temperature(t))
         
 analyse_all(get_temps())
+"""
+"""def add(a, b):
+    print (a,b)
+add(20, 30)"""
