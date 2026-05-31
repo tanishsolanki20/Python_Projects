@@ -25,5 +25,5 @@ def add_to_total(num):
     global total
     total += num
 
-add_to_total(5)
+add_to_total(333)
 print(total)
