@@ -25,9 +25,27 @@ lose_life(0)   # returns -1, no message (already past 0)"""
 #Exercise 4 — Quiz answer checker with streak Write a function check_with_streak(answer, correct, streak) that returns the new streak count. Streak goes up by 1 if correct, resets to 0 if wrong.
 """def check_with_streak(answer, correct, streak):
     if streak"""
-def check_with_streak(answer, correct, streak):
+"""def check_with_streak(answer, correct, streak):
     if answer == correct:
         streak += 1
     else:
         streak = 0
-    return streak
+    return streak"""
+"""def wow(name, age=12):
+    print("Hello", name, "you are", age, "years old")
+    return name, age
+wow("Tanish")"""
+def l(score):
+ """   if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    elif score > 100:
+        return "Invalid score"
+    else:
+        return "F"
+print(l(80))"""
