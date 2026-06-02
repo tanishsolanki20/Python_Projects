@@ -26,13 +26,3 @@ current_score=20
 correct, score, msg = check_answer(player_answer, correct_answer, current_score)
 print(msg)         
 print(score)  """
-class Dog:
-    def __init__(self, name, breed):
-        self.name = name
-        self.breed = breed
-
-    def bark(self):
-        return f"{self.name} says Woof!"
-
-my_dog = Dog("Bruno", "Labrador")  # object
-print(my_dog.bark())  # Bruno says Woof!
