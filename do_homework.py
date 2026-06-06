@@ -86,7 +86,7 @@ for i in range(len(games)):
 
 #Create a dictionary representing a game character with at least 5 keys (name, hp, attack, level, weapon). Write a function describe_character(character) that prints a neat summary of all their stats.
 
-game_character= {
+"""game_character= {
     "Name": "Alex",
     "HP": 90,
     "Attack": "Stealth",
@@ -99,7 +99,7 @@ def describe_character(character):
     print(f"  HP: {character['HP']}")
     print(f"  Attack: {character['Attack']}")
     print(f"  Weapon: {character['Weapon']}")
-describe_character(game_character)
+describe_character(game_character)"""
 
 
     
