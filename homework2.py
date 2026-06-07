@@ -1,5 +1,5 @@
 #Personal Information
-name = input("Enter your name: ")
+"""name = input("Enter your name: ")
 age = int(input("Enter your age: "))
 favorite_subject = input("Enter your favorite subject: ")
 likes_coding = input("Do you like coding? (True/False): ")
@@ -7,7 +7,7 @@ likes_coding = input("Do you like coding? (True/False): ")
 print(name)
 print(age)
 print(favorite_subject)
-print(likes_coding)
+print(likes_coding)"""
 
 
 

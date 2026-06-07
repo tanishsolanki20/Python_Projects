@@ -101,6 +101,49 @@ def describe_character(character):
     print(f"  Weapon: {character['Weapon']}")
 describe_character(game_character)"""
 
+#Medium
+#Write a function quiz_results(scores) that takes a list of scores and returns a dictionary with three keys: "total", "average", and "passed" (a list of scores that are 50 or above). Test it with [80, 30, 90, 45, 60].
+    
+"""def quiz_result(scores):
+    dict={}
+    dict["total"]= sum(scores)
+    dict["average"]= sum(scores)/ len(scores)
+    pass_list=[]
+    for i in scores:
+        if i >=50:
+            pass_list.append(i)
+            dict["passed"]=pass_list
+            
+    return dict
+print(quiz_result([80, 30, 90, 45, 60]))"""
+
+#Build a mini contact book program. It should have: add_contact(book, name, phone), find_contact(book, name) that returns the phone number or "Not found", and delete_contact(book, name). Store contacts as a dictionary where names are keys. Add 3 contacts, find one, delete one, then print the remaining contacts. This is the same pattern used in real address book apps.
+book={}
+def add_contact(book, name, phone):
+    book[name]= phone
+    return book 
+print(add_contact(book, "Tanish", 9834743322 ))
+print(add_contact(book, "Rahul", 9837463730 ))
+print(add_contact(book, "Aditya", 9491908779))
+print(add_contact(book, "Pratyush", 9391077556 ))
+print(book)
+
+def find_contact(book, name):
+    return book.get(name, " not found")
+        
+print(find_contact(book,"Rahul"))
+
+
+
 
     
 
+
+
+    
+    
+
+
+    
+
+    
