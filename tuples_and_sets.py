@@ -76,7 +76,7 @@ print(monday_count)"""
 
 #Write a function that takes a list of (name, age) tuples and returns the name of the oldest person. Hint: you can unpack each tuple inside a loop, or sort using a key function.
 
-def oldest_person(people):
+"""def oldest_person(people):
     oldest_name = None
     oldest_age = -1  # start lower than any real age
 
@@ -88,6 +88,18 @@ def oldest_person(people):
     return oldest_name
 
 people = [("Pratyuh", 14), ("Bob", 45), ("Charlie", 22)]
-print(oldest_person(people))  # Bob
+print(oldest_person(people))  # Bob"""
 
-    
+#Given two sets of hobbies for two friends, find hobbies they don't share with each other (in either direction). Hint: think about which set operation gives you "everything except what's common."
+
+friend_1= {"cricket", "painting", "singing"}
+friend_2= {"cricket", "gaming", "studying"}
+common= friend_1 & friend_2   
+print(f"In both friends {common} is common.")
+v= friend_1-friend_2
+print(v)
+n=friend_2-friend_1
+print(n)
+difference= v|n
+print(difference)
+
