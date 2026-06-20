@@ -103,3 +103,18 @@ print(n)
 difference= v|n
 print(difference)"""
 
+#Write a function has_duplicates(lst) that returns True if a list contains any repeated values, False otherwise, using a set. Hint: compare the length of the list to the length of the set made from it.
+
+def has_duplicates(lists):
+    w= set()
+    duplicates=[]
+    for item in lists:
+        if item not in w:
+            w.add(item)
+    else:
+         return True
+print(has_duplicates([1, 2, 3]))   # should print False
+print(has_duplicates([1, 2, 1]))   # should print True
+
+
+        
