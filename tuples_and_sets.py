@@ -92,7 +92,7 @@ print(oldest_person(people))  # Bob"""
 
 #Given two sets of hobbies for two friends, find hobbies they don't share with each other (in either direction). Hint: think about which set operation gives you "everything except what's common."
 
-friend_1= {"cricket", "painting", "singing"}
+"""friend_1= {"cricket", "painting", "singing"}
 friend_2= {"cricket", "gaming", "studying"}
 common= friend_1 & friend_2   
 print(f"In both friends {common} is common.")
@@ -101,5 +101,5 @@ print(v)
 n=friend_2-friend_1
 print(n)
 difference= v|n
-print(difference)
+print(difference)"""
 
