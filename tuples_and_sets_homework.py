@@ -10,4 +10,3 @@ y=int(input("Enter another number: "))
 v={x, y}
 print(f"First you entered {x} and then you entered {y}")
 
-#Build a "tag deduplicator" — given a list of hashtags someone used across multiple posts (with repeats and inconsistent casing like "Python" vs "python"), normalize the casing and return only the unique tags as a set.
