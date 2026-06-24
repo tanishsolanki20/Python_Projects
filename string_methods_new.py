@@ -57,6 +57,32 @@ digits_only= phone.replace("-", "")
 print(digits_only)"""
 
 # 7. Word frequency counter using split + a dictionary-free approach
-sentence= "the cat sat on the mat the cat ran"
+"""sentence= "the cat sat on the mat the cat ran"
 words = sentence.split()
 unique_words = set(words)
+for word in unique_words:
+    print(word, words.count(word))"""
+
+# 8. Validating a simple username
+"""def is_valid_username(name):
+    name= name.strip()
+    return name.isalnum() and len(name) >= 3 and not name.isdigit()
+
+print(is_valid_username("  amit99  ")) #True
+print(is_valid_username("12345"))      #True
+print(is_valid_username("a!"))         #False - not alphanumeric, too short"""
+
+"""def capitalise(Sentence):
+    x= Sentence.split()
+    for i in x:
+        print(i.capitalize())
+
+capitalise("hello, im tanish")"""
+
+"""def find_vowels(word):
+    vowels= "aeiou"
+    if word in vowels:
+        return word.count()
+
+print(find_vowels("Hello"))"""
+
