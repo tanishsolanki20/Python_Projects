@@ -78,11 +78,41 @@ print(is_valid_username("a!"))         #False - not alphanumeric, too short"""
         print(i.capitalize())
 
 capitalise("hello, im tanish")"""
+"""
+def find_vowels(word):
+    word= word.lower()
+    total= 0
+    for letter in word:
+        if letter in "aeiou":
+            total += 1
+    return total
 
-"""def find_vowels(word):
-    vowels= "aeiou"
-    if word in vowels:
-        return word.count()
+print(find_vowels("Hello"))
+print(find_vowels("Wow"))"""
 
-print(find_vowels("Hello"))"""
+"""def finding_palindrome(word):
+    word= word.lower().replace(" ","")
 
+    if word== word[::-1]:
+        print("is palindrome")
+    else:
+        print("is not palindrome")
+    
+finding_palindrome("  malayalam   ")"""
+    
+"""def messy_names_structure(x):
+    x=x.split(",")
+    cleaned=[]
+    for i in x:
+        cleaned.append(i.strip())
+    return cleaned
+
+print(messy_names_structure("amit,   priya, rahul"))
+"""
+"""
+def replacing_vowels_with_star(word):
+    a=word
+    for letter in "aeiou":
+          a=a.replace(letter, "*")
+    return a
+print(replacing_vowels_with_star("aeroplanes"))"""
