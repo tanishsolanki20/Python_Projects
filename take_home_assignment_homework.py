@@ -39,6 +39,38 @@ print(c)"""
 
 #Build a basic "text anonymizer" — given a paragraph and a list of names to hide, replace every occurrence of each name (case-insensitive) with "[REDACTED]", and report how many replacements were made in total. This mirrors real-world data privacy tools.
 
-r=input("Enter a word")
+"""import string
+
+def anonymize_text_v2(paragraph, names):
+    names_lower = set(name.lower() for name in names)
+    total_replacements = 0
+    
+    words = paragraph.split()
+    new_words = []
+    
+    for word in words:
+        # strip punctuation to compare the "core" word, but keep it for reattaching
+        stripped = word.strip(string.punctuation)
+        prefix_len = len(word) - len(word.lstrip(string.punctuation))
+        suffix_len = len(word) - len(word.rstrip(string.punctuation))
+        
+        prefix = word[:prefix_len]
+        suffix = word[len(word)-suffix_len:] if suffix_len else ''
+        
+        if stripped.lower() in names_lower:
+            new_words.append(prefix + '****' + suffix)
+            total_replacements += 1
+        else:
+            new_words.append(word)
+    
+    return ' '.join(new_words), total_replacements
+
+
+text = "John met Sarah at the cafe. JOHN was late, but sarah didn't mind."
+names_to_hide = ["John", "Sarah"]
+
+anonymized, count = anonymize_text_v2(text, names_to_hide)
+print(anonymized)
+print(f"Total replacements: {count}")"""
 
 
