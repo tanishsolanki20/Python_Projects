@@ -39,38 +39,30 @@ print(c)"""
 
 #Build a basic "text anonymizer" — given a paragraph and a list of names to hide, replace every occurrence of each name (case-insensitive) with "[REDACTED]", and report how many replacements were made in total. This mirrors real-world data privacy tools.
 
-"""import string
-
-def anonymize_text_v2(paragraph, names):
-    names_lower = set(name.lower() for name in names)
-    total_replacements = 0
-    
+"""def anonymize_text(paragraph, names):
+    names_lower = [name.lower() for name in names]
     words = paragraph.split()
-    new_words = []
-    
-    for word in words:
-        # strip punctuation to compare the "core" word, but keep it for reattaching
-        stripped = word.strip(string.punctuation)
-        prefix_len = len(word) - len(word.lstrip(string.punctuation))
-        suffix_len = len(word) - len(word.rstrip(string.punctuation))
-        
-        prefix = word[:prefix_len]
-        suffix = word[len(word)-suffix_len:] if suffix_len else ''
-        
+    total_replacements = 0
+    result_words = []
+
+    for word in words: 
+        #Strip trailing punctuation so "Amit" still matches "amit"
+        stripped = word.strip(".,!?;:")
         if stripped.lower() in names_lower:
-            new_words.append(prefix + '****' + suffix)
-            total_replacements += 1
+            result_words.append("[REDACTED]")
+            total_replacements +=1
         else:
-            new_words.append(word)
-    
-    return ' '.join(new_words), total_replacements
+            result_words.append(word)
+
+    result_text = " ".join(result_words)
+    return result_text, total_replacements
 
 
-text = "John met Sarah at the cafe. JOHN was late, but sarah didn't mind."
-names_to_hide = ["John", "Sarah"]
+paragraph= "Amit met Priya at the park. AMIT said hello to Priya and Rahul."
+names= ["amit", "priya"]
 
-anonymized, count = anonymize_text_v2(text, names_to_hide)
-print(anonymized)
-print(f"Total replacements: {count}")"""
-
-
+clean_text, count= anonymize_text(paragraph, names)
+print(clean_text)
+print(f"Replacements made {count}")
+x= 67
+print(x)"""
