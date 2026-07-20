@@ -75,3 +75,5 @@ inv = {"Apple": 10, "Banana": 23, "Mango": 12, "Lychee": 8}
 i = {"Apple": 3, "Banana": 23, "Mango": 32, "Lychee": 8}
 
 print(merge_inventories(inv, i))
+
+
