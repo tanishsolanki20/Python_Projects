@@ -42,5 +42,36 @@ print(unique_hobbies(l,a))"""
 a=["apple", "banana", "watermelon"]
 print(has_duplicates(a))"""
     
+#Write a function is_palindrome(text) that returns True if the given text reads the same
+#forwards and backwards, ignoring case and spaces. For example,
+#is_palindrome(" Nurses ") should return True.
 
+"""def is_palindrome(text):
+    y= text.strip().lower()
+    if y==y[::-1]:
+        return True
+print(is_palindrome("wow"))"""
     
+#Write a function word_lengths(sentence) that takes a sentence and returns a dictionary
+#mapping each unique word to the number of letters it has.
+
+"""def word_length(sentence):
+    x={}
+    l= sentence.split()
+    for i in l:
+        x[i] = x[i.len()]
+
+print(word_length("I am Tanish"))"""
+
+#Write a function merge_inventories(inv1, inv2) that combines two dictionaries of item-quantity pairs, adding quantities together when the same item appears in both. Your function must not modify the original dictionaries passed in.
+
+def merge_inventories(inv1, inv2):
+    merged= dict(inv1)
+    for item, quantity in inv2.items():
+        merged[item]= merged.get(item, 0) + quantity
+
+    return merged 
+inv = {"Apple": 10, "Banana": 23, "Mango": 12, "Lychee": 8}
+i = {"Apple": 3, "Banana": 23, "Mango": 32, "Lychee": 8}
+
+print(merge_inventories(inv, i))
