@@ -67,11 +67,11 @@ low, high, avg = list_stats([4,8,15,16,23,42])
 print(low, high, avg)"""
 
 #Find the largest number in a list without using max().
-v=[2, 5, 8]
+"""v=[2, 5, 8]
 max_elements= v[0]
 for i in v:
         if i > max_elements:
                 max_elements=i
-print(max_elements)
-        
+print(max_elements)"""
+     
                 
