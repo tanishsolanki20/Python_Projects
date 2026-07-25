@@ -33,7 +33,7 @@ print (greet_player("Maya"))"""
 print(double(5))
 print(double(5,3))
 """
-def get_grade(score):
+"""def get_grade(score):
     if score >=90:
         return "S"
     elif score >= 70:
@@ -44,4 +44,34 @@ def get_grade(score):
         return "F"
     
 print(get_grade(85)) #A
-print(get_grade(45)) #F
+print(get_grade(45)) #F"""
+
+"""def celsius_to_fahrenheit(c):
+    a= c * 9/5 + 32
+    return a
+print(celsius_to_fahrenheit(51))"""
+
+"""def count_down(start):
+    while start >= 1:
+        print (start)
+        start -= 1
+    print("blast off")
+count_down(5)"""
+"""def list_stats(numbers):
+    minimum= min(numbers)
+    maximum= max(numbers)
+    average= sum(numbers) / len(numbers)
+    return minimum, maximum, average
+
+low, high, avg = list_stats([4,8,15,16,23,42])
+print(low, high, avg)"""
+
+#Find the largest number in a list without using max().
+v=[2, 5, 8]
+max_elements= v[0]
+for i in v:
+        if i > max_elements:
+                max_elements=i
+print(max_elements)
+        
+                
