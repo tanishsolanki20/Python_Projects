@@ -84,9 +84,13 @@ for i in vowels:
         print(count)"""
 
 #Check if a given number is even or odd.
-num=int(input("Enter a number to check if it is odd or even: "))
+"""num=int(input("Enter a number to check if it is odd or even: "))
 if num%2==0:
     print("Even")
 else: 
-    print("Odd")
+    print("Odd")"""
+
+
+
+
 
