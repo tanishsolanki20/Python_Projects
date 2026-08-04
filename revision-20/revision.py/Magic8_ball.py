@@ -1,4 +1,4 @@
-"""import random
+import random
 
 question = input('Question:      ')
 
@@ -25,5 +25,5 @@ elif random_number == 9:
 else:
   answer = 'Error'
   
-print('Magic 8 Ball:  ' + answer)"""
+print('Magic 8 Ball:  ' + answer)
 

@@ -1,4 +1,4 @@
-"""name=input("Please enter your name: ")
+name=input("Please enter your name: ")
 print(f"Hello {name}!")
 age=int(input("Enter your age: "))
 showtime=input("At what time is your show(morning|evening|night): ")
@@ -38,5 +38,6 @@ print("----TICKET SUMMARY----")
 print(f"Name:   {name}")
 print(f"Age:    {age}")
 print(f"Category:   {category}")
-print(f"Showtime:   {showtime}")
-print(f"Price:  {price_note}")"""
+print(f"Show timing:   {showtime}")
+print(f"Price:  {price_note}")
+
