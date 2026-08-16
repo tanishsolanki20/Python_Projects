@@ -41,7 +41,7 @@ print(is_prime(45))
 print(is_prime(23))"""
 
 #5
-def km_to_miles(km):
+"""def km_to_miles(km):
     return km * 0.621371
 
 def kg_to_pounds(kg):
@@ -62,4 +62,5 @@ elif z == "celsius to fahrenheit":
     value = float(input("Enter celsius: "))
     print(celsius_to_fahrenheit(value))
 else:
-    print("Invalid option")
+    print("Invalid option")"""
+
