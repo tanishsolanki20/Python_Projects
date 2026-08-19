@@ -78,5 +78,5 @@ city=input("Enter you city: ")
 print(f"{name} is {age} years old and lives in {city}.")"""
 
 #12 
-price=input("Enter the price of the item: ")
-print(price+5/100)
+"""price=int(input("Enter the price of the item: "))
+print(f"Total price of the item(including taxes)={price+5/100}")"""
