@@ -127,14 +127,69 @@ Create a set of "students who submitted homework" and another set of "all studen
 
 #4
 """products={"Milk": 20, "Vegetables": 100, "Snacks": 50}
-for product in products:
-    print(product)
-print(f"Final price={products*0.9}")"""
+for key,value in products.items():
+    print(f"{key}:{value*0.9}")"""
+
 
 #5
 """students_who_submitted_homework={"Tanish", "Rahul", "Raj", "Meera"}
 all_students_in_class={"Tanish", "Pratyush", "Aditya", "Meera", "Raj", "Rahul"}
 print(all_students_in_class-students_who_submitted_homework)"""
+
+"""Easy
+1. Create a list of 5 numbers. Write a loop that prints only the even ones.
+2. Create a dictionary representing yourself (name, age, hobby). Print it in a nicely formatted sentence.
+Medium
+3. Write a function average_score(scores) that takes a list of numbers and returns the average.
+4. Build a small dictionary-based "phonebook" with 4 contacts (name → phone number). Ask the user to type a name, and look up their number using .get() — print "Not found" if the name isn't in the dictionary.
+Hard
+5. Build a simple inventory tracker: a dictionary where keys are item names and values are quantities. Write a menu (using input + if/elif, like Phase 5's unit converter) that lets the user: (1) add an item, (2) remove an item, (3) view all items. Use a while True: loop so they can do multiple actions."""
+
+#1
+"""numbers=[1,3,2,5,6]
+for number in numbers:
+    if number % 2==0:
+        print(number)"""
+
+#2
+"""myself={"name": "= Tanish", "age": "= 13", "hobby": "= Coding"}
+for key,value in myself.items():
+    print(f"My {key, value}")"""
+
+#3
+"""def average_scores(scores):
+    sum=0
+    for i in scores:
+        sum=sum+i/len(scores)
+    return sum
+scores=[1,3,4,2]
+print(average_scores(scores))"""
+
+#4
+"""phonebook={"Tanish": 9890392195, "Rahul": 9291032849, "Raj": 9203829392}
+user_input=input("Enter the name: ")
+result=phonebook.get(user_input)
+if result is None:
+        print("not found")
+else:
+    print(f"{user_input}={result}")"""
+
+#5
+"""inventory_tracker={"Golden Apple": 3, "Diamond Sword": 1, "Shield": 1, "Armor": 3}
+user_command=int(input("What function do you want to perform ([1]Add an item, [2]Remove an item, [3]View all items) "))
+if user_command==1:
+    a=input("What do you want to add? ")
+    b=int(input("enter qty: "))
+    inventory_tracker[a]=b
+elif user_command==2:
+    c=input("What do you want to delete? ")
+    del inventory_tracker[c]
+elif user_command==3:
+    for key,value in inventory_tracker.items():
+        print(f"{key}:{value}")
+else:
+    print("No command executed!")"""
+
 
 
 
