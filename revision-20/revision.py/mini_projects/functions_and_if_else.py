@@ -51,7 +51,7 @@ Add a scoring system where harder questions are worth more points (store each qu
 questions_with_answers={"Q: What keyword defines a function?(Easy)":"def", "Q: What does % give you?(Medium)" :"remainder", "Q: What type does input() return?(Hard)": "str"}
                         
 def ask_question(question, correct_answer):
-    user_answer = input("Q: " + question + " ")
+    user_answer = input(question + " ")
     if user_answer.strip().lower() == correct_answer.strip().lower():
         print("Correct!")
         return True
