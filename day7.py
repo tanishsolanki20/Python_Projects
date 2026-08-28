@@ -7,6 +7,8 @@ print (min_max([33, 44]))
     return password, user_id
 print(my_user_id_and_password("737373"))"""
 
-def greet(name,age=13):
+"""def greet(name,age=13):
     return f"My name is {name} and my age is {age}"
-print(greet("Tanish"))
+print(greet("Tanish"))"""
+
+def 
