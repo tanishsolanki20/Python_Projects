@@ -10,7 +10,7 @@ d=Dog("Cookie", "Shitzu", 2)
 d.bark()
 print(d.breed)"""
 
-class Students:
+"""class Students:
     def __init__(self, name, age):
         self.name=name
         self.age=age
@@ -19,4 +19,5 @@ class Students:
         print(f"My name is {self.name}")
 
 s1=Students("Tanish", 13)
-s1.students_names()
+s1.students_names()"""
+
