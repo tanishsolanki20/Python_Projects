@@ -8,3 +8,11 @@
         print("*", end=" ")
     print()"""
 
+"""num=222
+pal=0
+while num>=0:
+    last_digit=num%10
+    pal=(pal*10)+ last_digit
+    num=num//10
+print(222==pal)"""
+
